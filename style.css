@@ -1,146 +1,30 @@
-body {
-font-family: 'Inter', sans-serif;
-margin:0;
-color:#111;
-background:#fff;
-scroll-behavior:smooth;
-}
-
-.container {
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-}
-
-.header {
-position:sticky;
-top:0;
-background:white;
-z-index:1000;
-border-bottom:1px solid #eee;
-}
-
-.nav {
+.logo-grid {
 display:flex;
 justify-content:space-between;
 align-items:center;
+gap:40px;
+margin-top:20px;
 }
 
-nav a {
-margin-left:25px;
-text-decoration:none;
-color:#333;
-transition:0.3s;
+.logo-grid img {
+height:40px;
+opacity:0.7;
 }
 
-nav a:hover {
-color:black;
-}
-
-.hero-grid {
+.deal-grid {
 display:grid;
-grid-template-columns:1fr 1fr;
-align-items:center;
-gap:50px;
-}
-
-.hero-image img {
-width:100%;
-border-radius:12px;
-transition: transform 0.4s ease;
-}
-
-.hero-image img:hover {
-transform:scale(1.03);
-}
-
-h1 {
-font-size:48px;
-line-height:1.2;
-}
-
-h2 {
-font-size:34px;
-margin-bottom:20px;
-}
-
-p {
-color:#444;
-line-height:1.6;
-}
-
-.btn-primary {
-background:black;
-color:white;
-padding:14px 26px;
-text-decoration:none;
-border-radius:8px;
-margin-right:10px;
-transition:0.3s;
-}
-
-.btn-primary:hover {
-background:#333;
-}
-
-.btn-secondary {
-border:1px solid black;
-padding:14px 26px;
-text-decoration:none;
-border-radius:8px;
-color:black;
-}
-
-.stats {
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
-margin-top:40px;
-text-align:center;
-}
-
-.job {
-margin-bottom:40px;
-}
-
-.framework-grid {
-display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(2,1fr);
 gap:30px;
 margin-top:30px;
 }
 
-.contact {
-text-align:center;
+.deal {
+border:1px solid #eee;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
 }
 
-/* ANIMATIONS */
-
-.fade-in {
-opacity:0;
-transform:translateY(30px);
-transition: all 0.8s ease;
-}
-
-.fade-in.visible {
-opacity:1;
-transform:translateY(0);
-}
-
-/* MOBILE */
-
-@media(max-width:768px) {
-
-.hero-grid {
-grid-template-columns:1fr;
-}
-
-.framework-grid {
-grid-template-columns:1fr;
-}
-
-.stats {
-grid-template-columns:1fr 1fr;
-}
-
+.deal:hover {
+transform:translateY(-5px);
 }
