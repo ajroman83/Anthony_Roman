@@ -290,9 +290,9 @@ a {
 
 .portrait-frame img {
   width: 100%;
-  height: 460px;
-
+  height: auto;
   object-fit: cover;
+}
 
   /* THIS CONTROLS CROPPING */
   object-position: center 20%;
